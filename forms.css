@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+}
+*,*:before,*:after {
+  box-sizing: inherit;
+}
+
+body { 
+	padding: 0; 
+	margin:  0;
+}
+
+.calc{
+
+	width:  420px;
+	border:  1px solid darkorange;
+	background-color: black;
+	color:  white;
+}
+
+/*parent*/
+.calc-button-row {
+	 display: flex;
+	 flex-flow: row nowrap;
+	 justify-content: space-between; 
+	 margin-bottom: 0.5%;
+}
+
+.screen {
+	 	text-align: right;
+	 	font-family: 'Courier New',
+	  	Courier , monospace;
+
+	  	padding: 20px 5px;
+	  	font-size: 50px;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+	
+}
+
+/*child for flex box*/
+.calc-button{
+	background-color: #d8d9db;
+	color: black;
+	border: none;
+	font-size: 40px;
+	height: 80px;
+	flex-basis: 24.5%; 
+}
+
+.calc-button:hover{
+	background-color: #ebebeb;
+}
+
+.calc-button:active{
+	background-color: #bbbcbe;
+}
+
+.double{    /* extra class added two in total in html index.html*/
+	flex-basis: 49.7%;
+
+}
+.triple{
+	flex-basis: 74.8%;
+}
+/*.colr{
+	background-color: #FF8C00;
+	color: white;
+}*/
+
+/*abive way would work as good as this one below*/
+
+.calc-button:last-child{
+	background-color: darkorange;
+	color: white ;
+
+}
+.calc-button:last-child:hover{
+	background-color: #dfb07e;
+}
